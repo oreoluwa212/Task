@@ -24,14 +24,14 @@
       <form action="">
          <div>
             <label for="name">name</label>
-            <input type="text" name="name" id="">
+            <input type="text" name="name" id="" required>
          </div>
          <div>
             <label for="email">email</label>
-            <input type="text" name="email" id="">
+            <input type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
          </div>
          <div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message..." maxlength="200"></textarea>
          </div>
          <div class="priority">
             <label for="priority">Select your priority</label>
